@@ -1,0 +1,174 @@
+body {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+header, 
+.middle,
+footer {
+    background-color: #000000;
+    padding: 1rem;
+}
+
+/*header block*/
+header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.menu {
+    background-color: #2D4059;
+    display: flex;
+    padding: 1rem;
+    column-gap: 1rem;
+}
+
+.menu-left,
+.menu-mid,
+.menu-right {
+    background-color: #EA5455;
+}
+
+.menu-left,
+.menu-right {
+    width: 15%;
+}
+
+.menu-mid {
+    width: 70%;
+}
+
+.hero {
+    background-color: #F07B3F;
+}
+
+.hero div {
+    background-color: #FED460;
+    margin: 1rem;
+}
+
+/*middle block*/
+.middle {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.middle-container1 {
+    background-color: #4E4E6A;
+    flex-grow: 2;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.container1 div {
+    background-color: #1F6CB0;
+    width: 50%;
+}
+
+.container1-bottom {
+    background-color: #70A3C4;
+}
+
+.middle-container2 {
+    background-color: #F73F52;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 1rem;
+}
+
+.middle-container2 div {
+    background-color: #FEEA85;
+}
+
+/*footer block*/
+.footer-box {
+    background-color: #E6AF2E;
+}
+
+
+/*TABLETS*/
+@media only screen and (max-width: 768px) {
+    .middle {
+        background-color: #FEFF03;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+
+/*MOBILE*/
+@media only screen and (max-width: 600px) {
+    /*header block*/
+    header {
+        row-gap: 1rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .menu-left,
+    .menu-mid,
+    .menu-right {
+        width: 100%;
+    }
+
+    /*middle block*/
+    .middle {
+        background-color: #FEE228;
+    }
+
+    .middle-container1 {
+        background-color: #09506F;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        column-gap: 1rem;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    
+    .container1 div {
+        background-color: #62959C;
+        width: 100%;
+    }
+
+    .container1-bottom {
+        background-color: #A3DDCB;
+    }
+
+    .middle-container2 {
+        background-color: #FD7B54;
+    }
+
+    .middle-container2 div {
+        background-color: #FDB36B;
+    }
+
+    /*footer block*/
+    .footer-box {
+        background-color: #FDC764;
+    }
+}
